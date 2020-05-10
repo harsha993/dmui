@@ -1,0 +1,19 @@
+.form{
+    width: 33%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 1rem;
+}
+.response-container{
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    /* background-color: cadetblue; */
+    height: 400px;
+    text-align: center;
+    display: none;
+}
+.prediction-container{
+    font-size: 3rem;
+    color: white;
+}

@@ -14,9 +14,14 @@ btn.onclick = function () {
 
     xhr.addEventListener("readystatechange", function () {
         if (this.readyState === 4) {
-            console.log("Response : "+this.responseText);
+            console.log(this.response)
+            var prediction = JSON.parse(this.responseText)
+            document.getElementById("response").style.display = "inline"
+            document.getElementById("prediction").innerHTML = prediction.response
+
         }
     });
     xhr.open("POST", "https://cse5334-spring20.herokuapp.com/post_test");
+    // xhr.open("POST", "http://localhost:8080/post_test");
     xhr.send(data);
 }
