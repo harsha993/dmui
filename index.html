@@ -1,19 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/main.css">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/main.css">
+  <title>Home | Review to Rating Predictor</title>
 </head>
+
 <body>
-    <div class="form">
-        <input type="text" id="comment">
-        <input type="button" value="Predict Rating" id="submit">
-    </div>
-    <div class="response-container" id="response">
-        <h1>Your rating is most likely: <div id="prediction" class="prediction-container"></div></h1> 
-    </div>
-    <script src="js/main.js"></script>
+  <div class="container">
+    <form id="contact" action="" method="post">
+      <h3>Rating Predictor</h3>
+      <!-- <h4>Contact us for custom quote</h4> -->
+      <fieldset>
+        <input placeholder="Write a review" type="text" tabindex="1" required autofocus id="comment">
+      </fieldset>
+      <fieldset>
+        <button name="submit" type="button" id="submit">Predict Rating</button>
+      </fieldset>
+      <fieldset id="response">
+        <h3>Your rating is most likely</h3>
+        <h3 id="prediction"></h3>
+        <p>This app is powered by a Machine Learning model that uses Ridge Regression with a learning rate of 0.1. <a
+            class="link" href="iamharsha.tech">Learn more</a></p>
+      </fieldset>
+      <!-- <p class="copyright">Designed by <a href="https://colorlib.com" target="_blank" title="Colorlib">Colorlib</a></p> -->
+    </form>
+  </div>
+  <footer class="footer">
+    <p class="copyright">Developed by <a href="https://github.com/harsha993" target="_blank">@harsha</a>
+       with styling from <a href="https://codepen.io/colorlib/pen/KVoZyv" target="_blank">colorlib</a>. 
+       <a href="https://harshavardhan.netlify.app" target="_blank">wanna know how I built this?</a>
+    </p>
+  </footer>
+  <script src="js/main.js"></script>
 </body>
+
 </html>
